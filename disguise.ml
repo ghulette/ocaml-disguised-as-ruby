@@ -1,12 +1,13 @@
 (* Some functions to make OCaml look like Ruby. *)
 
-let rec each_line ch block = begin
+let rec each_line ch f = begin
   try 
     let line = input_line ch in
-    block line; 
-    each_line ch block
+    f line; 
+    each_line ch f
   with
-    End_of_file -> close_in ch
+    | End_of_file -> close_in ch
+    | _ -> prerr_endline "Error!"
 end;;
 
 let (>>>) = each_line;;
