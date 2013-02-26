@@ -6,7 +6,7 @@ let rec each_line ch block = begin
     block line; 
     each_line ch block
   with
-    End_of_file -> ()
+    End_of_file -> close_in ch
 end;;
 
 let (>>>) = each_line;;
