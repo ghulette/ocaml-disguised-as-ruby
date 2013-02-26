@@ -2,10 +2,8 @@ ocaml-disguised-as-ruby
 =======================
 
 A quick hack that shows how to handle files in OCaml sort of like you can in
-Ruby.
-
-The idea here is not to create a robust library, but to demonstrate the
-flexibility of higher-order functions for stuff like this. Hi Rob!
+Ruby. The idea here is not to create a robust library, but to demonstrate the
+flexibility of higher-order functions for stuff like this. Hi Rob! ;)
 
 Compare readfile.ml with readfile.rb.
 
