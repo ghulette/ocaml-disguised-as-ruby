@@ -1,6 +1,6 @@
-open Printf;;
-
 (* Some functions to make OCaml look like Ruby. *)
+
+open Printf
 
 let rec each_line ch block = begin
   try 
